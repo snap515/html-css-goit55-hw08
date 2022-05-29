@@ -1,5 +1,5 @@
 body {
-    color: var(--text-color);
+    color: $text-color;
     font-family: roboto, sans-serif;
 }
 
@@ -58,5 +58,5 @@ button {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--main-background);
+    background-color: $main-background;
 }
