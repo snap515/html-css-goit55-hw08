@@ -1,0 +1,123 @@
+.section-footer {
+    background-color: #2f303a;
+    padding: 60px 0px;
+}
+
+.section-footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.address__wrapper {
+    margin-right: 70px;
+}
+
+.logo-link {
+    &--white-logo {
+    color: #ffffff;
+    }
+}
+
+.address {
+    margin-top: 20px;
+
+    color: #ffffff;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.address__link {
+    display: block;
+    margin-top: 9px;
+
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+
+    transition: color $transition-duration $transition-timing-function;
+
+    &:hover, &:focus {
+        color: $brand-color;
+    }
+}
+
+.footer-slogan {
+    color: $white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.slogan-wrap {
+    margin-right: 93px;
+}
+
+.socials {
+    &--bigger-margin {
+    margin-top: 20px;
+    }
+}
+
+.socials__link {
+    &--grey-background {
+    color: $white-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color $transition-duration $transition-timing-function;
+    }
+    &--grey-background:hover, &--grey-background:focus {
+        background-color: $brand-color;
+    }
+}
+
+
+/* footer-form---------- */
+
+.footer-form__wrapper {
+    display: flex;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.footer-form__input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    color: $white-color;
+    background-color: #2F303A;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    transition: border-color $transition-timing-function $transition-duration, outline-color $transition-timing-function $transition-duration;
+
+    &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.footer-form__button {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.button__title {
+    padding-left: 29px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
