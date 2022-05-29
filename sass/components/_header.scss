@@ -1,11 +1,6 @@
 .header {
-    border-bottom: 1px solid #ececec;
-}
-
-.navigation {
-    display: flex;
-    align-items: center;
-}
+        border-bottom: 1px solid #ececec;
+    }
 
 .logo-accent {
     color: $brand-color;
@@ -16,22 +11,45 @@
 
     font-family: $secondary-font;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
     letter-spacing: 0.03em;
-    text-decoration: none;
-    &--big-hover{
-        display: block;
-        padding-top: 24px;
-        padding-bottom: 25px;
-        margin-right: 93px;
-
+    @media screen and (max-width: $mobile){
+        font-size: 24px;
+        line-height: 1.08;
+        text-decoration: none;
+        margin-right: 276px;
+        &--big-hover{
+            display: inline-flex;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
     }
 }
 
-.navigation__list {
-    display: flex;
+.menu-button {
+    display: inline-flex;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
 
+.menu-button .icon-cross {
+    display: none;
+}
+
+.menu-button.is-open .icon-cross{
+    display:block;
+}
+
+.menu-button.is-open .icon-menu{
+    display:none;
+}
+
+.menu-container {
+
+}
+
+.navigation__list {
     color: $title-color;
 
     font-weight: 500;

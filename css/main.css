@@ -58,6 +58,12 @@ button {
   padding-right: 15px;
 }
 
+@media screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -68,15 +74,6 @@ button {
   border-bottom: 1px solid #ececec;
 }
 
-.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .logo-accent {
   color: #2196f3;
 }
@@ -85,23 +82,48 @@ button {
   color: #212121;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
-.logo-link--big-hover {
+@media screen and (max-width: 480px) {
+  .logo-link {
+    font-size: 24px;
+    line-height: 1.08;
+    text-decoration: none;
+    margin-right: 276px;
+  }
+  .logo-link--big-hover {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 .navigation__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #212121;
   font-weight: 500;
   font-size: 14px;
