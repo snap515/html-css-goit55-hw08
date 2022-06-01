@@ -1,5 +1,6 @@
 .header {
         border-bottom: 1px solid #ececec;
+        position: relative;
     }
 
 .logo-accent {
@@ -12,25 +13,30 @@
     font-family: $secondary-font;
     font-weight: 700;
     letter-spacing: 0.03em;
-    @media screen and (max-width: $mobile){
-        font-size: 24px;
-        line-height: 1.08;
-        text-decoration: none;
-        margin-right: 276px;
-        &--big-hover{
-            display: inline-flex;
-            padding-top: 16px;
-            padding-bottom: 16px;
+    font-size: 24px;
+    line-height: 1.08;
+    text-decoration: none;
+    &--big-hover{
+        display: inline-block;
+        padding-top: 16px;
+        padding-bottom: 16px;
         }
-    }
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .menu-button {
     display: inline-flex;
     border: none;
     background-color: transparent;
-    margin: 0;
-    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    z-index: 100;
+    cursor: pointer;
 }
 
 .menu-button .icon-cross {
@@ -39,6 +45,15 @@
 
 .menu-button.is-open .icon-cross{
     display:block;
+    color: current;
+    }
+
+.menu-button:hover .icon-cross, .menu-button:focus .icon-cross {
+    fill: $brand-color;
+}
+
+.menu-button:hover .icon-menu, .menu-button:focus .icon-menu {
+    fill: $brand-color;
 }
 
 .menu-button.is-open .icon-menu{
@@ -46,10 +61,36 @@
 }
 
 .menu-container {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
 
+    padding: 48px 40px;
+
+    background-color:$white-color;
+
+    &.is-open {
+        display: block;
+    }
+}
+
+.menu-container .icon-cross {
+    display: none;
+}
+
+.menu-container.is-open .icon-cross{
+    display:block;
+}
+
+.menu-container.is-open .icon-menu{
+    display:none;
 }
 
 .navigation__list {
+    display: block;
     color: $title-color;
 
     font-weight: 500;
@@ -57,77 +98,86 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     list-style: none;
+
+    text-align: start;
 }
 
 .navigation__item {
-    position: relative;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
     &:not(:last-child)
-    {margin-right: 50px;} 
+    {margin-bottom: 32px;} 
 }
 
 .navigation__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
     color: inherit;
     text-decoration: none;
 
-    transition: color $transition-duration $transition-timing-function;
-
-    &:hover, &:focus{
-        color: $brand-color;
-    }
     &--bottom-border {
         color: $brand-color;
     }
-    &--bottom-border::after {position: absolute;
-    content: '';
-    left: 0;
-    bottom: -1px;
-
-
-    height: 4px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border-radius: 2px;
-    background-color: $brand-color;}
 }
 
 .contacts__list {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
+    text-align: start;
+    margin-top: 302px;
 }
 
 .contacts__item{
     &:not(:last-child){
-    margin-right: 50px;}
+    margin-bottom: 32px;}
 }
 
 .contacts__link {
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    align-items: center;
     color: $text-color;
 
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     text-decoration: none;
 
     transition: color $transition-duration $transition-timing-function;
 
-    &:hover, &:focus {
+    &--brand-color{
         color: $brand-color;
+        font-size: 34px;
+        line-height: 1.18;
     }
 }
 
 .contacts__icon {
+    display: none;
     margin-right: 10px;
     fill: currentColor;
 }
 
+.mobile-socials {
+    margin-top: 64px;
+}
+
+.mobile-socials__item {
+    display: inline-block;
+    &:not(:first-child){
+        margin-left: 10px;
+    }
+}
+
+.mobile-socials__item:not(:last-child){
+    &::after{
+            content:'';
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+            margin-left: 10px;
+    }
+}
+
+.mobile-socials__link {
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $brand-color;
+}
