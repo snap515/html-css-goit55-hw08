@@ -220,8 +220,6 @@ button {
 
 .contacts__icon {
   display: none;
-  margin-right: 10px;
-  fill: currentColor;
 }
 
 .mobile-socials {
@@ -251,24 +249,25 @@ button {
 }
 
 .section__hero {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-img.png);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.png);
   background-size: cover;
   text-align: center;
 }
 
+.hero-content-wrapper {
+  padding: 118px 60px;
+}
+
 .section-hero__title {
-  margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
