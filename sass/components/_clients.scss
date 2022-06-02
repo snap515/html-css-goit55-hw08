@@ -1,12 +1,11 @@
-.clients-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+// .clients-list {
+//     display: inline-block;
+// }
 
 .clients-item {
-    &:not(:last-child) {
-    margin-right: 30px;
+    display: inline-block;
+    &:nth-child(2n-1){
+        margin-right: 20px;
     }
 }
 
@@ -15,7 +14,7 @@
     align-items: center;
     justify-content: center;
 
-    width: 170px;
+    width: 210px;
     height: 92px;
 
     color: $icon-color;
@@ -32,5 +31,8 @@
 }
 
 .clients-item__icon {
+    margin: 0;
+    padding: 0;
+    border: 0;
     fill: currentColor;
 }
