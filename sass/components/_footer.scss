@@ -1,16 +1,18 @@
 .section-footer {
     background-color: #2f303a;
     padding: 60px 0px;
+
+    text-align: centerq;
 }
 
-.section-footer__container {
-    display: flex;
-    align-items: baseline;
-}
+// .section-footer__container {
+//     display: flex;
+//     align-items: baseline;
+// }
 
-.address__wrapper {
-    margin-right: 70px;
-}
+// .address__wrapper {
+//     margin-right: 70px;
+// }
 
 .logo-link {
     &--white-logo {
@@ -53,9 +55,9 @@
     letter-spacing: 0.03em;
 }
 
-.slogan-wrap {
-    margin-right: 93px;
-}
+// .slogan-wrap {
+//     margin-right: 93px;
+// }
 
 .socials {
     &--bigger-margin {
@@ -77,12 +79,12 @@
 
 /* footer-form---------- */
 
-.footer-form__wrapper {
-    display: flex;
-    align-items: center;
+// .footer-form__wrapper {
+//     display: flex;
+//     align-items: center;
 
-    margin-top: 20px;
-}
+//     margin-top: 20px;
+// }
 
 .footer-form__input {
     width: 358px;

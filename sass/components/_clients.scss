@@ -1,9 +1,12 @@
-// .clients-list {
-//     display: inline-block;
-// }
+.clients-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 .clients-item {
     display: inline-block;
+    margin-bottom: 30px;
     &:nth-child(2n-1){
         margin-right: 20px;
     }
