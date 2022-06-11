@@ -2,6 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 101;
 
     width: 100%;
     height: 100%;
@@ -22,11 +23,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1.1);
-    z-index: 100001213;
+    z-index: 100;
 
-    min-width: 450px;
-    min-height: 609px;
+    display: inline-block;
     padding: 40px;
+    margin: 0 auto;
+    width: 450px;
 
     background-color: $white-color;
 
@@ -63,7 +65,7 @@
     color: $title-color;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -71,11 +73,8 @@
 .form__field {
     position: relative;
 
-    display: flex;
-    flex-direction: column;
-
-    &:not(:first-child) {
-    margin-top: 10px;
+    &:not(:nth-child(2)) {
+        margin-top: 10px;
     }
 }
 
@@ -150,8 +149,8 @@
 .checkbox__text {
     display: block;
 
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
 }
 
