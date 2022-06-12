@@ -3,6 +3,13 @@
         position: relative;
     }
 
+.navigation {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+    }
+}
+
 .logo-accent {
     color: $brand-color;
 }
@@ -14,13 +21,20 @@
     font-weight: 700;
     letter-spacing: 0.03em;
     font-size: 24px;
-    line-height: 1.08;
+    line-height: 1.16;
     text-decoration: none;
+    @media screen and (min-width: $tablet){
+        margin-right: 88px;
+    }
     &--big-hover{
         display: inline-block;
         padding-top: 16px;
         padding-bottom: 16px;
+        @media screen and (min-width: $tablet) {
+            padding-top: 26px;
+            padding-bottom: 26px;
         }
+    }
 }
 
 .nav-wrapper {
@@ -37,6 +51,10 @@
     margin-bottom: 10px;
     z-index: 100;
     cursor: pointer;
+
+    @media screen and (min-width: $tablet){
+        display: none;
+    }
 }
 
 .menu-button .icon-cross {
@@ -61,19 +79,28 @@
 }
 
 .menu-container {
-    display: none;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
+    @media screen and (max-width:767px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        overflow: hidden;
 
-    padding: 48px 40px;
+        display: none;
+        width: 100%;
+        height: auto;
+        padding: 48px 40px;
 
-    background-color:$white-color;
+        background-color:$white-color;
 
-    &.is-open {
+        &.is-open {
         display: block;
+        margin: 0 auto;
+        }
+    }
+    @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
     }
 }
 
@@ -89,8 +116,7 @@
     display:none;
 }
 
-.navigation__list {
-    display: block;
+.navigation__list {    
     color: $title-color;
 
     font-weight: 500;
@@ -98,18 +124,41 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     list-style: none;
-
     text-align: start;
+
+    @media screen and (max-width:767px) {
+        display: block;
+    }
+
+    @media screen and (min-width:$tablet){
+        display: flex;
+        align-items: center;
+        margin-right: 84px;
+    }
 }
 
 .navigation__item {
     font-weight: 500;
-    font-size: 40px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
 
-    &:not(:last-child)
-    {margin-bottom: 32px;} 
+    @media screen and (max-width:767px) {
+        font-size: 40px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+
+        &:not(:last-child){
+        margin-bottom: 32px;
+        }
+    }
+
+    @media screen and (min-width:$tablet){
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+
+        &:not(:last-child){
+        margin-right: 50px;
+        }
+    }
 }
 
 .navigation__link {
@@ -122,30 +171,60 @@
 }
 
 .contacts__list {
-    text-align: start;
-    margin-top: 302px;
+    @media screen and (max-width:767px){
+        text-align: start;
+        margin-top: 302px;
+    }
+
+    @media screen and (min-width:$tablet) {
+        display: block;
+    }
+    
 }
 
 .contacts__item{
-    &:not(:last-child){
-    margin-bottom: 32px;}
+    @media screen and (max-width:767px){
+        &:not(:last-child){
+        margin-bottom: 32px;
+        }
+    }
+
+    @media screen and (min-width:$tablet){
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
+    
 }
 
 .contacts__link {
     color: $text-color;
-
     font-weight: 500;
-    font-size: 24px;
+    text-decoration: none;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    text-decoration: none;
+    
+    @media screen and (max-width:767px){
+        font-size: 24px;
+    }
+
+    @media screen and (min-width:$tablet){
+        font-size: 12px;
+    }
 
     transition: color $transition-duration $transition-timing-function;
 
     &--brand-color{
-        color: $brand-color;
-        font-size: 34px;
-        line-height: 1.18;
+        @media screen and (max-width:767px){
+            color: $brand-color;
+            font-size: 34px;
+            line-height: 1.18;
+        }
+
+        @media screen and (min-width:$tablet){
+            font-size: 12px;
+        }
+        
     }
 }
 
@@ -154,7 +233,12 @@
 }
 
 .mobile-socials {
-    margin-top: 64px;
+    @media screen and (max-width:767px){
+        margin-top: 64px;
+    }
+    @media screen and (min-width:$tablet){
+        display: none;
+    }
 }
 
 .mobile-socials__item {

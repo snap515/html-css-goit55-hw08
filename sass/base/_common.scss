@@ -49,10 +49,20 @@ button {
 }
 
 .container {
+    position: relative;
+
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
     width: 480px;
+    
+    @media screen and (min-width: $tablet) and (max-width:1199px) {
+        width: 768px;        
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 1200px;        
+    }
 }
 
 .section {
