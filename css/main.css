@@ -282,6 +282,12 @@ button {
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation__link {
+    padding: 32px 0px;
+  }
+}
+
 .navigation__link--bottom-border {
   color: #2196f3;
 }
@@ -396,11 +402,24 @@ button {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .section__hero {
+    max-width: 768px;
+  }
+}
+
 .hero-content-wrapper {
   padding: 118px 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-content-wrapper {
+    padding: 118px 204px;
+  }
+}
+
 .section-hero__title {
+  margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
   font-size: 26px;

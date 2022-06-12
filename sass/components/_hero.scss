@@ -4,6 +4,10 @@
     margin-left: auto;
     margin-right: auto;
 
+    @media screen and (min-width: $tablet){
+        max-width: 768px;   
+    }
+
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero-img.png);
 
@@ -13,9 +17,14 @@
 
 .hero-content-wrapper {
     padding: 118px 60px;
+
+    @media screen and (min-width: $tablet){
+        padding: 118px 204px;
+    }
 }
 
 .section-hero__title {
+    margin-bottom: 30px;
     color: $white-color;
     font-weight: 900;
     font-size: 26px;
