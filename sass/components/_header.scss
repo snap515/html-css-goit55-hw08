@@ -79,7 +79,7 @@
 }
 
 .menu-container {
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:$mobile) {
         position: absolute;
         top: 0;
         left: 0;
@@ -126,7 +126,7 @@
     list-style: none;
     text-align: start;
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:$mobile) {
         display: block;
     }
 
@@ -140,7 +140,7 @@
 .navigation__item {
     font-weight: 500;
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:$mobile) {
         font-size: 40px;
         line-height: 1.18;
         letter-spacing: 0.02em;
@@ -175,7 +175,7 @@
 }
 
 .contacts__list {
-    @media screen and (max-width:767px){
+    @media screen and (max-width:$mobile){
         text-align: start;
         margin-top: 302px;
     }
@@ -187,7 +187,7 @@
 }
 
 .contacts__item{
-    @media screen and (max-width:767px){
+    @media screen and (max-width:$mobile){
         &:not(:last-child){
         margin-bottom: 32px;
         }
@@ -208,7 +208,7 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     
-    @media screen and (max-width:767px){
+    @media screen and (max-width:$mobile){
         font-size: 24px;
     }
 
@@ -219,7 +219,7 @@
     transition: color $transition-duration $transition-timing-function;
 
     &--brand-color{
-        @media screen and (max-width:767px){
+        @media screen and (max-width:$mobile){
             color: $brand-color;
             font-size: 34px;
             line-height: 1.18;
@@ -237,7 +237,7 @@
 }
 
 .mobile-socials {
-    @media screen and (max-width:767px){
+    @media screen and (max-width:$mobile){
         margin-top: 64px;
     }
     @media screen and (min-width:$tablet){
