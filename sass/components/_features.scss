@@ -1,13 +1,36 @@
+.features-list {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 .features-item {
-    width: 450px;
-    &:not(:last-child){
-        margin-bottom: 30px;}
+    @media screen and (max-width: $mobile){
+        width: 450px;
+        &:not(:last-child){
+            margin-bottom: 30px;
+    }
+    }
+    
+    @media screen and (min-width: $tablet) {
+        display: inline-block;
+        width: 354px;
+        &:nth-child(2n+1){
+            margin-right: 30px;
+        }
+        &:nth-child(-n+2) {
+            margin-bottom: 30px;
+        }
+        
+    }      
 }
 
 .features-item__icon {
     display: flex;
     justify-content: center;
     align-items: center;
+
     height: 120px;
     margin-bottom: 30px;
 
@@ -25,6 +48,10 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    @media screen and (max-width: $tablet) {
+        text-align: start;
+    }
 }
 
 .features-item__text {
