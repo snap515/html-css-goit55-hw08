@@ -763,8 +763,31 @@ button {
   text-align: center;
 }
 
-.logo-link--white-logo {
+@media screen and (min-width: 768px) {
+  .tablet-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-footer .logo-link {
+    margin-right: 0px;
+  }
+}
+
+.section-footer .logo-link--white-logo {
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .adress-wrapper {
+    margin-left: 76px;
+  }
 }
 
 .address {
@@ -799,8 +822,16 @@ button {
   letter-spacing: 0.03em;
 }
 
-.slogan-wrap {
-  margin-top: 60px;
+@media screen and (max-width: 767.8px) {
+  .slogan-wrap {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slogan-wrap {
+    margin-left: 165px;
+  }
 }
 
 .socials--bigger-margin {
