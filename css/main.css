@@ -59,7 +59,7 @@ button {
   width: 480px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.8px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .container {
     width: 768px;
   }
@@ -67,7 +67,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1600px;
   }
 }
 
@@ -474,35 +474,50 @@ button {
 }
 
 .section__hero {
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-img.png);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.png);
   background-size: cover;
   text-align: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 480px- 0.02px) {
   .section__hero {
-    max-width: 768px;
+    max-width: 480px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .section__hero {
+    max-width: 768px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .section__hero {
     max-width: 1600px;
     height: 600px;
   }
 }
 
-.hero-content-wrapper {
-  padding: 118px 60px;
+@media screen and (max-width: 767.8px) {
+  .hero-content-wrapper {
+    padding: 118px auto;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .hero-content-wrapper {
-    padding: 118px 204px;
+    padding: 118px auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-content-wrapper {
+    padding: 200px auto;
   }
 }
 
