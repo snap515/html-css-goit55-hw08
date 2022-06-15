@@ -1,11 +1,16 @@
 .section__hero {
     max-width: 480px;
-    height: 400px;
+    // height: 400px;
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width: $tablet){
+    @media screen and (min-width: $tablet) and (max-width:($desktop - 0.02px)){
         max-width: 768px;   
+    }
+
+    @media screen and (min-width: $tablet){
+        max-width: 1600px;
+        height: 600px;
     }
 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
