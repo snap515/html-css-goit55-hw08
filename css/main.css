@@ -774,6 +774,19 @@ button {
   }
 }
 
+.section-footer .logo-link--big-hover {
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-footer .logo-link--big-hover {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .section-footer .logo-link {
     margin-right: 0px;
@@ -1191,6 +1204,11 @@ button {
 }
 
 .projects__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 30px;
 }
 
