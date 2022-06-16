@@ -1,7 +1,14 @@
 .section{
-    &--no-top-padding
-    {
-    padding-top: 0px;}
+    &--no-top-padding {
+    padding-top: 0px;
+    }
+
+    &-hidden {
+        display: none;
+        @media screen and (min-width:$desktop){
+        display: block;
+        }
+    }
 }
 
 .section__title {

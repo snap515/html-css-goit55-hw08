@@ -61,7 +61,7 @@ button {
     }
 
     @media screen and (min-width:$desktop) {
-        width: 1600px;        
+        width: 1200px;        
     }
 }
 
@@ -69,8 +69,4 @@ button {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $main-background;
-
-    &-hidden {
-        display: none;
-    }
 }

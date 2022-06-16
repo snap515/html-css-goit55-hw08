@@ -67,7 +67,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1600px;
+    width: 1200px;
   }
 }
 
@@ -75,10 +75,6 @@ button {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #ffffff;
-}
-
-.section-hidden {
-  display: none;
 }
 
 .header {
@@ -642,6 +638,16 @@ button {
 
 .section--no-top-padding {
   padding-top: 0px;
+}
+
+.section-hidden {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hidden {
+    display: block;
+  }
 }
 
 .section__title {
