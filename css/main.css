@@ -551,13 +551,21 @@ button {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .features-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -570,7 +578,7 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .features-item {
     display: inline-block;
     width: 354px;
@@ -580,6 +588,15 @@ button {
   }
   .features-item:nth-child(-n+2) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-item {
+    width: 270px;
+  }
+  .features-item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -610,7 +627,7 @@ button {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .features-item__title {
     text-align: start;
   }
