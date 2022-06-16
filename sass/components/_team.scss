@@ -4,9 +4,12 @@
 }
 
 .team-list {
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width:($desktop - 0.02px)) {
         display: flex;
         flex-wrap: wrap;
+    }
+    @media screen and (min-width:$desktop) {
+        display: flex;
     }
 }
 
@@ -20,12 +23,18 @@
         margin-bottom: 30px;
         }
     }
-    @media screen and (min-width: $tablet){
+    @media screen and (min-width: $tablet) and (max-width:($desktop - 0.02px)) {
         width: 354px;
         &:nth-child(-n+2){
             margin-bottom: 30px;
         }
         &:nth-child(2n+1){
+            margin-right: 30px;
+        }
+    }
+
+    @media screen and (min-width:$desktop) {
+        &:not(:last-child){
             margin-right: 30px;
         }
     }
