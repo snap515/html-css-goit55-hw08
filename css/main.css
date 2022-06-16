@@ -842,7 +842,7 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .clients-item {
     margin-right: 30px;
   }
@@ -851,6 +851,12 @@ button {
   }
   .clients-item:nth-child(3n+3) {
     margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -878,9 +884,16 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .clients-item__link {
     width: 226px;
+    height: 92px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-item__link {
+    width: 170px;
     height: 92px;
   }
 }
