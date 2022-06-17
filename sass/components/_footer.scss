@@ -3,12 +3,23 @@
     padding: 60px 0px;
 
     text-align: center;
+
+    &__container {
+        @media screen and (min-width:$desktop) {
+            display:flex;
+            align-items: baseline;
+        }
+    }
 }
 
 .tablet-wrapper {
     @media screen and (min-width: $tablet){
         display: flex;
         align-items: baseline;
+    }
+
+    @media screen and (min-width:$desktop) {
+        margin-right: 93px;
     }
 }
 
@@ -69,14 +80,23 @@
     line-height: 16px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width:$desktop){
+        text-align: start;
+        margin-bottom: 20px;
+    }
 }
 
 .slogan-wrap {
     @media screen and (max-width: $mobile) {
         margin-top: 60px;
     }
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width:($desktop - 0.02px)) {
         margin-left: 165px;
+    }
+    @media screen and (min-width:$desktop) {
+        margin-left: 70px;
+        
     }
 }
 
@@ -102,18 +122,30 @@
 
 .footer-form__wrapper {
     display: flex;
-    flex-direction: column;
     align-items: center;
-
-    margin-top: 20px;
+    @media screen and (max-width:($desktop - 0.02px)) {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    @media screen and (min-width:$desktop) {
+        
+    }
+    
 }
 
 .footer-form {
     margin-top: 60px;
+
 }
 
 .footer-form__input {
-    width: 450px;
+    @media screen and (max-width:($desktop - 0.02px)){
+        width: 450px;
+    }
+    @media screen and (min-width:$desktop) {
+        width: 358px;
+    }
+    
     height: 50px;
     padding-left: 16px;
     padding-top: 15px;
@@ -140,7 +172,13 @@
 .footer-form__button {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    @media screen and (max-width: ($desktop - 0.02px)) {
+        margin-top: 20px;
+    }
+    @media screen and (min-width:$desktop) {
+        margin-left: 12px;
+    }
+    
 }
 
 .button__title {
