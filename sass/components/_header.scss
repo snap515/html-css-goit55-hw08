@@ -92,15 +92,15 @@
 
 .menu-container {
     @media screen and (max-width:$mobile) {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         z-index: 10;
-        overflow: hidden;
+        overflow-y: scroll;
 
         display: none;
         width: 100%;
-        height: auto;
+        height: 100vh;
         padding: 48px 40px;
 
         background-color:$white-color;
@@ -185,8 +185,6 @@
 
 .navigation__link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
     color: inherit;
     text-decoration: none;
@@ -210,6 +208,11 @@
         padding: 0;
         border-radius: 2px;
         background-color: $brand-color;}
+    }
+
+    @media screen and (min-width:$desktop) {
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 
