@@ -1181,8 +1181,6 @@ button {
   z-index: 101;
   width: 100%;
   height: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1202,7 +1200,6 @@ button {
           transform: translate(-50%, -50%) scale(1.1);
   z-index: 100;
   padding: 40px;
-  margin: 0 auto;
   background-color: #ffffff;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1263,6 +1260,13 @@ button {
 
 .form__field {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .form__field:not(:nth-child(2)) {
@@ -1284,6 +1288,12 @@ button {
   border-radius: 4px;
   -webkit-transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, outline-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, outline-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+@media screen and (min-width: 1200px) {
+  .form__input {
+    width: 448px;
+  }
 }
 
 .form__input:focus-within {
@@ -1314,6 +1324,12 @@ button {
   resize: none;
   -webkit-transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, outline-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, outline-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+@media screen and (min-width: 1200px) {
+  .form__comment {
+    width: 448px;
+  }
 }
 
 .form__comment:focus-within {
@@ -1361,6 +1377,13 @@ button {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 1200px) {
+  .checkbox__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .checkbox__link {
   color: #2196f3;
 }
@@ -1383,7 +1406,12 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__label {
+    margin-left: 12px;
+  }
 }
 
 .checkbox__icon {
