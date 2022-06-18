@@ -197,6 +197,8 @@
         color: $brand-color;
     }
     @media screen and (min-width:$tablet) {
+        padding-top: 32px;
+        padding-bottom: 32px;
         &--bottom-border::after {position: absolute;
         content: '';
         left: 0;
@@ -211,8 +213,6 @@
     }
 
     @media screen and (min-width:$desktop) {
-        padding-top: 32px;
-        padding-bottom: 32px;
     }
 }
 

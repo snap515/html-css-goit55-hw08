@@ -2,7 +2,7 @@
     background-color: #2f303a;
     padding: 60px 0px;
 
-    text-align: center;
+    
 
     &__container {
         @media screen and (min-width:$desktop) {
@@ -42,7 +42,12 @@
 }
 
 .adress-wrapper {
-    @media screen and (min-width: $tablet) {
+    text-align: start;
+    @media screen and (max-width:($desktop - 0.02px)) {
+        text-align: center;
+    }
+
+    @media screen and (min-width:$tablet) and (max-width:($desktop - 0.02px)){
         margin-left: 76px;
     }
 }
@@ -80,6 +85,9 @@
     line-height: 16px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+    @media screen and (max-width:($desktop - 0.02px)) {
+        text-align: center;        
+    }
 
     @media screen and (min-width:$desktop){
         text-align: start;
@@ -95,7 +103,7 @@
         margin-left: 165px;
     }
     @media screen and (min-width:$desktop) {
-        margin-left: 70px;
+        margin-left: 85px;
         
     }
 }
@@ -134,8 +142,9 @@
 }
 
 .footer-form {
-    margin-top: 60px;
-
+    @media screen and (max-width:($desktop - 0.02px)){
+        margin-top: 60px;
+    }
 }
 
 .footer-form__input {
