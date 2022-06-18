@@ -4,7 +4,7 @@
     }
 
 .navigation {
-    @media screen and (min-width: $tablet) {
+    @include mq(tablet) {
         display: flex;
         align-items: center;
     }
@@ -23,10 +23,10 @@
     font-size: 24px;
     line-height: 1.16;
     text-decoration: none;
-    @media screen and (min-width: $tablet) and (max-width:($desktop - 0.02px)){
+    @include mq(tablet-only){
         margin-right: 88px;
     }
-    @media screen and (min-width:$desktop){
+    @include mq(desktop){
         margin-right: 93px;
 
         font-size: 26px;
@@ -37,11 +37,11 @@
         display: inline-block;
         padding-top: 16px;
         padding-bottom: 16px;
-        @media screen and (min-width: $tablet) and (max-width:($desktop - 0.02px)){
+        @include mq(tablet-only){
             padding-top: 26px;
             padding-bottom: 26px;
         }
-        @media screen and (min-width:$desktop) {
+        @include mq(desktop) {
             padding-top: 24px;
             padding-bottom: 25px;
             
@@ -64,7 +64,7 @@
     z-index: 100;
     cursor: pointer;
 
-    @media screen and (min-width: $tablet){
+    @include mq(tablet){
         display: none;
     }
 }
@@ -91,7 +91,7 @@
 }
 
 .menu-container {
-    @media screen and (max-width:$mobile) {
+    @include mq(mobile-only) {
         position: fixed;
         top: 0;
         left: 0;
@@ -110,7 +110,7 @@
         margin: 0 auto;
         }
     }
-    @media screen and (min-width: $tablet) {
+    @include mq(tablet) {
     display: flex;
     align-items: center;
     }
@@ -138,16 +138,16 @@
     list-style: none;
     text-align: start;
 
-    @media screen and (max-width:$mobile) {
+    @include mq(mobile-only) {
         display: block;
     }
 
-    @media screen and (min-width:$tablet) and (max-width:($desktop - 0.02px)){
+    @include mq(tablet-only){
         display: flex;
         align-items: center;
         margin-right: 84px;
     }
-    @media screen and (min-width:$desktop){
+    @include mq(desktop){
         display: flex;
         align-items: center;
         margin-right: 305px;
@@ -158,7 +158,7 @@
     position: relative;
     font-weight: 500;
 
-    @media screen and (max-width:$mobile) {
+    @include mq(mobile-only) {
         font-size: 40px;
         line-height: 1.18;
         letter-spacing: 0.02em;
@@ -168,7 +168,7 @@
         }
     }
 
-    @media screen and (min-width:$tablet){
+    @include mq(tablet){
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
@@ -178,7 +178,7 @@
         }
     }
 
-    @media screen and (min-width:$desktop) {
+    @include mq(desktop) {
         
     }
 }
@@ -196,7 +196,7 @@
     &--bottom-border {
         color: $brand-color;
     }
-    @media screen and (min-width:$tablet) {
+    @include mq(tablet) {
         padding-top: 32px;
         padding-bottom: 32px;
         &--bottom-border::after {position: absolute;
@@ -212,40 +212,40 @@
         background-color: $brand-color;}
     }
 
-    @media screen and (min-width:$desktop) {
+    @include mq(desktop) {
     }
 }
 
 .contacts__list {
-    @media screen and (max-width:$mobile){
+    @include mq(mobile-only){
         text-align: start;
         margin-top: 302px;
     }
 
-    @media screen and (min-width:$tablet) and (max-width:($desktop - 0.02px)) {
+    @include mq(tablet-only) {
         display: block;
     }
     
-    @media screen and (min-width:$desktop) {
+    @include mq(desktop) {
         display: flex;
         align-items: center;
     }
 }
 
 .contacts__item{
-    @media screen and (max-width:$mobile){
+    @include mq(mobile-only){
         &:not(:last-child){
         margin-bottom: 32px;
         }
     }
 
-    @media screen and (min-width:$tablet) and (max-width:($desktop - 0.02px)){
+    @include mq(tablet-only){
         &:not(:first-child) {
             margin-top: 10px;
         }
     }
 
-    @media screen and (min-width:$desktop){
+    @include mq(desktop){
         margin-right: 30px;
     }
     
@@ -264,21 +264,21 @@
     &:hover, &:focus {
         color: $brand-color;
     }
-    @media screen and (max-width:$mobile){
+    @include mq(mobile-only){
         font-size: 24px;
     }
-    @media screen and (min-width:$tablet){
+    @include mq(tablet){
         display: flex;
         align-items: center;
         font-size: 12px;
     }
-    @media screen and (min-width:$desktop) {
+    @include mq(desktop) {
         padding-top: 32px;
         padding-bottom: 32px;     
     }
 
     &--brand-color{
-        @media screen and (max-width:$mobile){
+        @include mq(mobile-only){
             color: $brand-color;
             font-size: 34px;
             line-height: 1.18;
@@ -290,7 +290,7 @@
 .contacts__icon {
     display: none;
 
-    @media screen and (min-width:$tablet) {
+    @include mq(tablet) {
         display: flex;
         margin-right: 10px;
         fill: currentColor;
@@ -299,10 +299,10 @@
 }
 
 .mobile-socials {
-    @media screen and (max-width:$mobile){
+    @include mq(mobile-only){
         margin-top: 64px;
     }
-    @media screen and (min-width:$tablet){
+    @include mq(tablet){
         display: none;
     }
 }

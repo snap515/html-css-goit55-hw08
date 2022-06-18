@@ -2,18 +2,18 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width:480px) and (max-width:($mobile)){
+    @include mq(mobile-only){
         max-width: 480px;
         height: 400px;
     }
     
 
-    @media screen and (min-width: $tablet) and (max-width:($desktop - 0.02px)){
+    @include mq(tablet-only){
         max-width: 768px;
         height: 400px; 
     }
 
-    @media screen and (min-width: $desktop){
+    @include mq(desktop){
         max-width: 1600px;
         height: 600px;
     }
@@ -26,17 +26,17 @@
 }
 
 .hero-content-wrapper {
-    @media screen and (min-width:480px) and (max-width:$mobile) {
+    @include mq(mobile-only) {
         padding-top: 118px;
         padding-bottom: 118px;
     }
     
-    @media screen and (min-width:$tablet) and (max-width:($desktop - 0.02px)) {
+    @include mq(tablet-only) {
         padding-top: 118px;
         padding-bottom: 118px;
     }
 
-    @media screen and (min-width: $desktop){
+    @include mq(desktop){
         padding-top: 200px;
         padding-bottom: 200px;
     }

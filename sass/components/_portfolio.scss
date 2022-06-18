@@ -12,7 +12,7 @@
 }
 
 .filter__list {
-    @media screen and (min-width:$tablet) {
+    @include mq(tablet) {
         display: flex;
         justify-content: center;
     }
@@ -23,7 +23,7 @@
     &:not(:last-child) {
         margin-right: 8px;
     }
-    @media screen and (max-width: $mobile) {
+    @include mq(mobile-only) {
         &:nth-child(n+4) {
         margin-top: 15px;
         }
@@ -54,14 +54,14 @@
 .projects__item {
     display: inline-block;
     margin-bottom: 30px;
-    @media screen and (max-width: $mobile){
+    @include mq(mobile-only){
         width: 450px;
         &:not(:last-child) {
             margin-bottom: 30px;
         }
     }
 
-    @media screen and (min-width: $tablet) and (max-width:($desktop - 0.02px)){
+    @include mq(tablet-only){
         width: calc((100% - 30px) / 2 );
         &:nth-child(2n+1) {
             margin-right: 30px;
@@ -71,7 +71,7 @@
         }
     }
 
-    @media screen and (min-width:$desktop) {
+    @include mq(desktop) {
         width: calc((100% - 60px) / 3);
         margin-right: 30px;
         margin-bottom: 30px;

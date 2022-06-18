@@ -480,7 +480,7 @@ button {
   text-align: center;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   .section__hero {
     max-width: 480px;
     height: 400px;
@@ -501,7 +501,7 @@ button {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   .hero-content-wrapper {
     padding-top: 118px;
     padding-bottom: 118px;

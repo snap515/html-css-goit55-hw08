@@ -5,7 +5,7 @@
 
     &-hidden {
         display: none;
-        @media screen and (min-width:$desktop){
+        @include mq(desktop){
         display: block;
         }
     }
