@@ -92,11 +92,11 @@
 
 .menu-container {
     @include mq(mobile-only) {
-        position: fixed;
+        position: relative;
         top: 0;
         left: 0;
         z-index: 10;
-        overflow-y: scroll;
+        // overflow-y: scroll;
 
         display: none;
         width: 100%;
