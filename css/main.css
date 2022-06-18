@@ -1213,7 +1213,7 @@ button {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+@media screen and (max-width: 1199.98px) {
   .modal {
     width: 450px;
   }

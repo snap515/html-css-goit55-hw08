@@ -6,7 +6,7 @@
     &-hidden {
         display: none;
         @include mq(desktop){
-        display: block;
+            display: block;
         }
     }
 }
