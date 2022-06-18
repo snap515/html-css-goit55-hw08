@@ -218,6 +218,9 @@
 
 .contacts__list {
     @include mq(mobile-only){
+        display: flex;
+        flex-direction: column-reverse;
+
         text-align: start;
         margin-top: 302px;
     }
@@ -235,7 +238,13 @@
 .contacts__item{
     @include mq(mobile-only){
         &:not(:last-child){
-        margin-bottom: 32px;
+        margin-top: 32px;
+        }
+
+        &:last-child .contacts__link {
+            color: $brand-color;
+            font-size: 34px;
+            line-height: 1.18;
         }
     }
 
@@ -277,13 +286,21 @@
         padding-bottom: 32px;     
     }
 
-    &--brand-color{
-        @include mq(mobile-only){
-            color: $brand-color;
-            font-size: 34px;
-            line-height: 1.18;
-        }
-    }
+    // &--brand-color{
+    //     @include mq(mobile-only){
+    //         color: $brand-color;
+    //         font-size: 34px;
+    //         line-height: 1.18;
+    //     }
+    // }
+
+    // &:first-child {
+    //     @include mq(mobile-only){
+    //         color: $brand-color;
+    //         font-size: 34px;
+    //         line-height: 1.18;
+    //     }
+    // }
 }
 
 
