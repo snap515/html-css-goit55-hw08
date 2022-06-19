@@ -55,7 +55,7 @@ button {
     padding-left: 15px;
     padding-right: 15px;
     width: 480px;
-    
+        
     @media screen and (min-width: $tablet) and (max-width:($desktop - 0.02px)) {
         width: 768px;        
     }
