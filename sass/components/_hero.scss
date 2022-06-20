@@ -9,11 +9,11 @@
         height: 400px;
 
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/Hero/Hero-img-mob.png);
+        url(../images/Hero/Hero-img-mob.png);
 
         @include mq(retina){
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../images/Hero/Hero-img-mob@2x.png);
+            url(../images/Hero/Hero-img-mob@2x.png);
         }
     }
     
@@ -23,11 +23,11 @@
         height: 400px;
 
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/Hero/Hero-img-tab.png);
+        url(../images/Hero/Hero-img-tab.png);
 
         @include mq(retina){
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../images/Hero/Hero-img-tab@2x.png);
+            url(../images/Hero/Hero-img-tab@2x.png);
         }
     }
 
@@ -36,11 +36,11 @@
         height: 600px;
 
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/Hero/Hero-img-desk.png);
+        url(../images/Hero/Hero-img-desk.png);
 
         @include mq(retina){
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../images/Hero/Hero-img-desk@2x.png);
+            url(../images/Hero/Hero-img-desk@2x.png);
         }
     }
     
